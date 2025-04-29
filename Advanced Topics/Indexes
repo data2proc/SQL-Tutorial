@@ -1,1 +1,7 @@
+The Concept of Index in SQL and Related Points:
 
+In this article, we discuss the types of indexes, how to create and manage them, and provide a general explanation of their functionality.
+
+An index is similar to a table of contents in books. It helps direct you to the data or information you are looking for. Imagine if your book didn’t have a table of contents—finding any topic would require searching through the book from beginning to end or vice versa. Naturally, this process would be highly error-prone and time-consuming. When you look for a specific record in SQL Server without defining a specific index on the table, SQL Server searches record by record (similar to page by page in a book) to find the required data. By defining the correct index on database tables, the process of searching for records and fields becomes easier.
+
+An index is essentially an object in the database that allows you to find specific data in a table faster. Like a book's table of contents, it occupies some space, but given its advantages, this space usage is worthwhile. You don’t need to remind SQL Server to use the created index; it will automatically use it if the query is written in a way that matches the index. Whether you are a database administrator or a software developer, knowing about indexes is highly useful and efficient for both roles.
