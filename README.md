@@ -1,19 +1,18 @@
 # SQL Tutorial Repository
 Welcome to the SQL Tutorial repository! This project is designed to help you master SQL by providing step-by-step guides, examples, and projects. Whether you're a beginner or advanced learner, there's something for everyone.
 
-## What's Included
-- SQL Basics: SELECT, WHERE, JOIN, etc.
+## What's Included  
 - Advanced Topics:  
-    [Indexing (Rebuilding Indexes,...)](./Advanced%20Topics/Indexes)  
-    [Creating Logins](Advanced%20Topics/Login)  
-    [Creating Users](./Advanced%20Topics/Users)  
-    Recovery Model  
-    MaxDop Concept  
-    Bulk Insert  
-    Temporary SP  
-    Save Point  
-    DMVs  
-    DB Snapshot.    
+    [Indexing (Rebuilding Indexes,...)](./Advanced%20Topics/Indexes.md)  
+    [Creating Logins](Advanced%20Topics/Login.md)  
+    [Creating Users](Advanced%20Topics/Users.md)  
+    [Recovery Model](Advanced%20Topics/Recovery%20Model.md)  
+    [MaxDop Concept](Advanced%20Topics/MaxDop%20Concept.md)  
+    [Bulk Insert](Advanced%20Topics/Bulk%20Insert.md)  
+    [Temporary SP](Advanced%20Topics/Temporary%20SP.md)  
+    [Save Point](Advanced%20Topics/Save%20Point.md)  
+    [DMVs](Advanced%20Topics/DMVs.md)  
+    [DB Snapshot](Advanced%20Topics/DB%20Snapshot.md)    
 - Practice Projects with datasets.
 - Comprehensive explanations and visual guides.
 
