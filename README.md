@@ -4,8 +4,9 @@ Welcome to the SQL Tutorial repository! This project is designed to help you mas
 ## What's Included
 - SQL Basics: SELECT, WHERE, JOIN, etc.
 - Advanced Topics:  
-    Indexing (Rebuilding Indexes,...)  
-    Creating Logins and Users  
+    [Indexing (Rebuilding Indexes,...)](./Advanced%20Topics/Indexes)  
+    [Creating Logins](Advanced%20Topics/Login)  
+    [Creating Users](./Advanced%20Topics/Users)  
     Recovery Model  
     MaxDop Concept  
     Bulk Insert  
