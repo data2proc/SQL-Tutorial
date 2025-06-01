@@ -138,7 +138,7 @@ Defines the row separator, defaulting to `\r\n` (Newline).
 
 ## Bulk Insert Example
 
-To demonstrate `Bulk Insert`, a large dataset is needed. You can download sample data from [Click here](https://www.microsoft.com).  
+To demonstrate `Bulk Insert`, a large dataset is needed. You can download sample data from [here](https://github.com/data2proc/SQL-Tutorial/blob/main/Advanced%20Topics/Datasets/BulkInsert.csv)  
 
 First, a table must be created to store the imported data. The structure of this table should match the input data model. It is recommended to include control columns such as `ImportDate` to track historical records.
 
