@@ -101,6 +101,12 @@ FORMATFILE_DATA_SOURCE = 'data_source_name'
 Defines the format of the data source.
 
 KEEPIDENTITY  
+The `KEEPIDENTITY` option in the `BULK INSERT` command ensures that identity values from the source data are preserved when inserting records into a table with an identity column.By default, SQL Server assigns new identity values automatically, ignoring those in the imported data. However, when `KEEPIDENTITY` is specified, SQL Server retains the original identity values from the source file instead of generating new ones.  
+This option is useful when:  
+- Migrating data while maintaining existing identity values, such as primary keys or references in related tables.
+- Ensuring consistency when transferring data between databases.  
+However, if the identity values in the source file conflict with existing values in the destination table, errors may occur.  
+
 KEEPNULLS  
 Specifies whether empty values should be treated as `NULL` during import.
 
@@ -138,12 +144,12 @@ Defines the row separator, defaulting to `\r\n` (Newline).
 
 ## Bulk Insert Example
 
-To demonstrate `Bulk Insert`, a large dataset is needed. You can download sample data from [here](https://github.com/data2proc/SQL-Tutorial/blob/main/Advanced%20Topics/Datasets/BulkInsert.csv)  
+To demonstrate `Bulk Insert`, a large dataset is needed (but here we put a small dataset for testing the command). You can download sample data from [here](https://github.com/data2proc/SQL-Tutorial/blob/main/Advanced%20Topics/Datasets/BulkInsert.csv)  
 
 First, a table must be created to store the imported data. The structure of this table should match the input data model. It is recommended to include control columns such as `ImportDate` to track historical records.
 
-Create a CSV file named **bulkInsert.csv** and save the following data:
-9;John;Mackay;58 Lamberts Branch Road;123777898 10;Aaron;Gallagher;2218 Smith Road;556814332  
+Create a CSV file named **bulkInsert.csv** and save the following data:  
+9;John;Mackay;58 Lamberts Branch Road;123777898  10;Aaron;Gallagher;2218 Smith Road;556814332  
 
 
 To transfer the CSV data into the database, use:
